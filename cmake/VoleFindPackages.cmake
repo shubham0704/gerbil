@@ -1,7 +1,7 @@
 # Library versions
 
 # We only tested 4.0 after making changes to stay compatible with 4.0
-set(VOLE_MINIMUM_OPENCV_VERSION "4.0.0")
+set(VOLE_MINIMUM_OPENCV_VERSION "3.1.0")
 
 # 5.5 or 5.5.1 fixes an important drawing bug
 set(VOLE_MINIMUM_QT_VERSION "5.5.1")
@@ -184,14 +184,14 @@ vole_check_package(BOOST_CHRONO
 )
 
 # Boost python
-#find_package(Boost ${VOLE_MINIMUM_BOOST_VERSION} COMPONENTS python)
-#vole_check_package(BOOST_PYTHON
-#	"Boost python"
-#	"Please install Boost python >=${VOLE_MINIMUM_BOOST_VERSION} or set Boost_ROOT."
-#	Boost_PYTHON_FOUND
-#	"${Boost_INCLUDE_DIR}/include/;${Boost_INCLUDE_DIR}"
-#	"${Boost_PYTHON_LIBRARY}"
-#)
+find_package(Boost ${VOLE_MINIMUM_BOOST_VERSION} COMPONENTS python)
+vole_check_package(BOOST_PYTHON
+	"Boost python"
+	"Please install Boost python >=${VOLE_MINIMUM_BOOST_VERSION} or set Boost_ROOT."
+	Boost_PYTHON_FOUND
+	"${Boost_INCLUDE_DIR}/include/;${Boost_INCLUDE_DIR}"
+	"${Boost_PYTHON_LIBRARY}"
+)
 
 # PETSc && SLEPc
 #find_package(PETSc)
@@ -256,3 +256,7 @@ endif (OpenCL_FOUND)
 # Find threading library.
 # On Linux/UNIX this pthreads.
 find_package(Threads)
+
+
+#find_package(GRPC PATHS /usr/lib/include/grpcpp)
+find_package(GRPC)

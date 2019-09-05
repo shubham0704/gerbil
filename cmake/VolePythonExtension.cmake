@@ -1,6 +1,6 @@
 # Python Extension for Vole
 
-option(VOLE_BUILD_PYTHON_MODULES "Build python modules for commands where possible." OFF)
+option(VOLE_BUILD_PYTHON_MODULES "Build python modules for commands where possible." ON)
 
 set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES "__init__.py;__init__.pyc")
 

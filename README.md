@@ -26,3 +26,17 @@ SOURCE
 The latest version of the software can be obtained at 
 http://www.gerbilvis.org/
 
+
+CONTRIBUTION
+------------
+
+Refer - http://gerbilvis.org/devel/sdk-intro/
+1. Create a new folder called tutorial
+2. Create mapper.cpp
+3. Create CMakeLists.txt
+4. Create the build directory
+5. Call cmake ../ from the build directory
+6. Navigate to gerbil/tutorial and call make
+7. Binares will be present in the bin/ directory
+8. Navigate to the bin/ folder and call ./simmap
+

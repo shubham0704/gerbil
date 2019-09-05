@@ -1,0 +1,30 @@
+syntax = "proto3";
+import "google/protobuf/struct.proto";
+
+package gerbil;
+
+message NdArray{
+	// the actual array data in bytes
+	bytes data = 1;
+
+	// Specifies the shape (dimensions) of an array
+	repeated uint32 shape = 2 [packed = true];
+
+	// Specifies the data type of the array
+	string dtype = 3;
+}
+
+message Request{
+	NdArray image = 1;
+	map<string, google.protobuf.Value> params = 2;	
+}
+
+message Response{
+	NdArray image = 1;
+	map<string, google.protobuf.Value> metainfo = 2;
+}
+
+service GerbilRPC {
+	
+	rpc MeanShiftSP (Request) returns (Response){}
+}

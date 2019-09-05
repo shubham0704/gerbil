@@ -1,0 +1,910 @@
+Determining if the function res_servicename exists in the resolv failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49161/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49161.dir/build.make CMakeFiles/cmTC_49161.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49161.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=res_servicename -fPIE   -o CMakeFiles/cmTC_49161.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_49161
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49161.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=res_servicename    -rdynamic CMakeFiles/cmTC_49161.dir/CheckFunctionExists.c.o  -o cmTC_49161 -lresolv 
+CMakeFiles/cmTC_49161.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `res_servicename'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_49161.dir/build.make:97: recipe for target 'cmTC_49161' failed
+make[1]: *** [cmTC_49161] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_49161/fast' failed
+make: *** [cmTC_49161/fast] Error 2
+
+
+Determining if the function gethostbyname exists in the socket failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a122e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a122e.dir/build.make CMakeFiles/cmTC_a122e.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a122e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -fPIE   -o CMakeFiles/cmTC_a122e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a122e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a122e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_a122e.dir/CheckFunctionExists.c.o  -o cmTC_a122e -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a122e.dir/build.make:97: recipe for target 'cmTC_a122e' failed
+make[1]: *** [cmTC_a122e] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a122e/fast' failed
+make: *** [cmTC_a122e/fast] Error 2
+
+
+Determining if the function socket exists in the socket failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bf8f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf8f0.dir/build.make CMakeFiles/cmTC_bf8f0.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf8f0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=socket -fPIE   -o CMakeFiles/cmTC_bf8f0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bf8f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf8f0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=socket    -rdynamic CMakeFiles/cmTC_bf8f0.dir/CheckFunctionExists.c.o  -o cmTC_bf8f0 -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bf8f0.dir/build.make:97: recipe for target 'cmTC_bf8f0' failed
+make[1]: *** [cmTC_bf8f0] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bf8f0/fast' failed
+make: *** [cmTC_bf8f0/fast] Error 2
+
+
+Determining if files socket.h exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7cb3d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7cb3d.dir/build.make CMakeFiles/cmTC_7cb3d.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7cb3d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_7cb3d.dir/CheckIncludeFiles.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: socket.h: No such file or directory
+ #include <socket.h>
+          ^~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_7cb3d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7cb3d.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_7cb3d.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7cb3d/fast' failed
+make: *** [cmTC_7cb3d/fast] Error 2
+
+Source:
+/* */
+#include <socket.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock2.h;windows.h exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4aa3a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4aa3a.dir/build.make CMakeFiles/cmTC_4aa3a.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4aa3a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_4aa3a.dir/CheckIncludeFiles.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_4aa3a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4aa3a.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4aa3a.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4aa3a/fast' failed
+make: *** [cmTC_4aa3a/fast] Error 2
+
+Source:
+/* */
+#include <winsock2.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock2.h;ws2tcpip.h;windows.h exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_843fc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_843fc.dir/build.make CMakeFiles/cmTC_843fc.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_843fc.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_843fc.dir/CheckIncludeFiles.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_843fc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_843fc.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_843fc.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_843fc/fast' failed
+make: *** [cmTC_843fc/fast] Error 2
+
+Source:
+/* */
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock.h;windows.h exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a14e0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a14e0.dir/build.make CMakeFiles/cmTC_a14e0.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a14e0.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_a14e0.dir/CheckIncludeFiles.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: winsock.h: No such file or directory
+ #include <winsock.h>
+          ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a14e0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a14e0.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a14e0.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a14e0/fast' failed
+make: *** [cmTC_a14e0/fast] Error 2
+
+Source:
+/* */
+#include <winsock.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f555f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f555f.dir/build.make CMakeFiles/cmTC_f555f.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f555f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_f555f.dir/CheckIncludeFiles.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+          ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_f555f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f555f.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f555f.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f555f/fast' failed
+make: *** [cmTC_f555f/fast] Error 2
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_TYPE_SOCKET failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_468ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_468ed.dir/build.make CMakeFiles/cmTC_468ed.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_468ed.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_TYPE_SOCKET -fPIE   -o CMakeFiles/cmTC_468ed.dir/src.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/src.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/src.c:26:4: error: unknown type name 'SOCKET'; did you mean 'LOCK_EX'?
+    SOCKET var_exists;
+    ^~~~~~
+    LOCK_EX
+CMakeFiles/cmTC_468ed.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_468ed.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_468ed.dir/src.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_468ed/fast' failed
+make: *** [cmTC_468ed/fast] Error 2
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			SOCKET var_exists;
+			(void)var_exists;
+			return 0;
+		}
+	
+Determining if the SO_NONBLOCK exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b76a0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b76a0.dir/build.make CMakeFiles/cmTC_b76a0.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b76a0.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_b76a0.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'SO_NONBLOCK' undeclared (first use in this function); did you mean 'O_NONBLOCK'?
+   return ((int*)(&SO_NONBLOCK))[argc];
+                   ^~~~~~~~~~~
+                   O_NONBLOCK
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_b76a0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b76a0.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b76a0.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b76a0/fast' failed
+make: *** [cmTC_b76a0/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_NONBLOCK
+  return ((int*)(&SO_NONBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the bitncmp exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15da4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15da4.dir/build.make CMakeFiles/cmTC_15da4.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15da4.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_15da4.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'bitncmp' undeclared (first use in this function); did you mean 'bcmp'?
+   return ((int*)(&bitncmp))[argc];
+                   ^~~~~~~
+                   bcmp
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_15da4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_15da4.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_15da4.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_15da4/fast' failed
+make: *** [cmTC_15da4/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef bitncmp
+  return ((int*)(&bitncmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the closesocket exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8191d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8191d.dir/build.make CMakeFiles/cmTC_8191d.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8191d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_8191d.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'closesocket' undeclared (first use in this function); did you mean 'socket'?
+   return ((int*)(&closesocket))[argc];
+                   ^~~~~~~~~~~
+                   socket
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_8191d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8191d.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8191d.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8191d/fast' failed
+make: *** [cmTC_8191d/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CloseSocket exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_36fc7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36fc7.dir/build.make CMakeFiles/cmTC_36fc7.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36fc7.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_36fc7.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'CloseSocket' undeclared (first use in this function); did you mean 'socket'?
+   return ((int*)(&CloseSocket))[argc];
+                   ^~~~~~~~~~~
+                   socket
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_36fc7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_36fc7.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_36fc7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_36fc7/fast' failed
+make: *** [cmTC_36fc7/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CloseSocket
+  return ((int*)(&CloseSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the inet_net_pton exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07021/fast"
+/usr/bin/make -f CMakeFiles/cmTC_07021.dir/build.make CMakeFiles/cmTC_07021.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07021.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_07021.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_07021
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07021.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_07021.dir/CheckSymbolExists.c.o  -o cmTC_07021 -lnsl -lrt 
+CMakeFiles/cmTC_07021.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `inet_net_pton'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_07021.dir/build.make:97: recipe for target 'cmTC_07021' failed
+make[1]: *** [cmTC_07021] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_07021/fast' failed
+make: *** [cmTC_07021/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_net_pton
+  return ((int*)(&inet_net_pton))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the ioctlsocket exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f10cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f10cd.dir/build.make CMakeFiles/cmTC_f10cd.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f10cd.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_f10cd.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'ioctlsocket' undeclared (first use in this function); did you mean 'socket'?
+   return ((int*)(&ioctlsocket))[argc];
+                   ^~~~~~~~~~~
+                   socket
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_f10cd.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f10cd.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f10cd.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f10cd/fast' failed
+make: *** [cmTC_f10cd/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctlsocket
+  return ((int*)(&ioctlsocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IoctlSocket exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9ffc7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9ffc7.dir/build.make CMakeFiles/cmTC_9ffc7.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ffc7.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_9ffc7.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'IoctlSocket' undeclared (first use in this function); did you mean 'clock_t'?
+   return ((int*)(&IoctlSocket))[argc];
+                   ^~~~~~~~~~~
+                   clock_t
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_9ffc7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9ffc7.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9ffc7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9ffc7/fast' failed
+make: *** [cmTC_9ffc7/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IoctlSocket
+  return ((int*)(&IoctlSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_75e0b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_75e0b.dir/build.make CMakeFiles/cmTC_75e0b.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75e0b.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_75e0b.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'strcmpi' undeclared (first use in this function); did you mean 'strcmp'?
+   return ((int*)(&strcmpi))[argc];
+                   ^~~~~~~
+                   strcmp
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_75e0b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_75e0b.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_75e0b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_75e0b/fast' failed
+make: *** [cmTC_75e0b/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7db6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7db6.dir/build.make CMakeFiles/cmTC_b7db6.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'stricmp' undeclared (first use in this function); did you mean 'strncmp'?
+   return ((int*)(&stricmp))[argc];
+                   ^~~~~~~
+                   strncmp
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_b7db6.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b7db6/fast' failed
+make: *** [cmTC_b7db6/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3474/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3474.dir/build.make CMakeFiles/cmTC_c3474.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3474.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_c3474.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'strncmpi' undeclared (first use in this function); did you mean 'strncmp'?
+   return ((int*)(&strncmpi))[argc];
+                   ^~~~~~~~
+                   strncmp
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_c3474.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c3474.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c3474.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3474/fast' failed
+make: *** [cmTC_c3474/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strnicmp exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1769/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1769.dir/build.make CMakeFiles/cmTC_f1769.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1769.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_f1769.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: 'strnicmp' undeclared (first use in this function); did you mean 'strncmp'?
+   return ((int*)(&strnicmp))[argc];
+                   ^~~~~~~~
+                   strncmp
+/gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_f1769.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f1769.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f1769.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1769/fast' failed
+make: *** [cmTC_f1769/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strnicmp
+  return ((int*)(&strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function __system_property_get exists failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_148e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_148e3.dir/build.make CMakeFiles/cmTC_148e3.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_148e3.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DCHECK_FUNCTION_EXISTS=__system_property_get -fPIE   -o CMakeFiles/cmTC_148e3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_148e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_148e3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=__system_property_get    -rdynamic CMakeFiles/cmTC_148e3.dir/CheckFunctionExists.c.o  -o cmTC_148e3 -lnsl -lrt 
+CMakeFiles/cmTC_148e3.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `__system_property_get'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_148e3.dir/build.make:97: recipe for target 'cmTC_148e3' failed
+make[1]: *** [cmTC_148e3] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_148e3/fast' failed
+make: *** [cmTC_148e3/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8b85a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b85a.dir/build.make CMakeFiles/cmTC_8b85a.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b85a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_8b85a.dir/CheckSymbolExists.c.o   -c /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8b85a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b85a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8b85a.dir/CheckSymbolExists.c.o  -o cmTC_8b85a 
+CMakeFiles/cmTC_8b85a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8b85a.dir/build.make:97: recipe for target 'cmTC_8b85a' failed
+make[1]: *** [cmTC_8b85a] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8b85a/fast' failed
+make: *** [cmTC_8b85a/fast] Error 2
+
+File /gerbil/grpc_service/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /gerbil/grpc_service/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bdb77/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bdb77.dir/build.make CMakeFiles/cmTC_bdb77.dir/build
+make[1]: Entering directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bdb77.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_bdb77.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bdb77
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb77.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_bdb77.dir/CheckFunctionExists.c.o  -o cmTC_bdb77 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bdb77.dir/build.make:97: recipe for target 'cmTC_bdb77' failed
+make[1]: *** [cmTC_bdb77] Error 1
+make[1]: Leaving directory '/gerbil/grpc_service/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bdb77/fast' failed
+make: *** [cmTC_bdb77/fast] Error 2
+
+

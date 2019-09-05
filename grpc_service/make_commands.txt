@@ -1,0 +1,6 @@
+protoc -I ./ --cpp_out=. gerbil.proto
+g++ -std=c++11 `pkg-config --cflags protobuf grpc`  -c -o gerbil.pb.o gerbil.pb.cc
+protoc -I ./ --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` gerbil.proto
+g++ -std=c++11 `pkg-config --cflags protobuf grpc`  -c -o gerbil.grpc.pb.o gerbil.grpc.pb.cc
+g++ -std=c++11 `pkg-config --cflags protobuf grpc`  -c -o gerbil_server.o gerbil_server.cpp
+g++ gerbil.pb.o gerbil.grpc.pb.o gerbil_server.o -L/usr/local/lib `pkg-config --libs protobuf grpc++ grpc` -pthread -Wl,--no-as-needed -lgrpc++_reflection -Wl,--as-needed -ldl -o gerbil_server
